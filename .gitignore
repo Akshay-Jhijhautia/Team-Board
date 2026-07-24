@@ -1,0 +1,35 @@
+#Virtual Environment
+.venv/
+venv/
+
+#Environment variables and secrets
+.env 
+.env.local
+.env.*.local
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+#Django
+db.sqlite3
+*.log
+staticfiles/
+media/
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs and editors
+.vscode/
+.idea
+
+# macOs
+.DS_store
+
+# Temporary files
+*.swp
+*.swo
