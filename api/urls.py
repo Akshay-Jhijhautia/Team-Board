@@ -1,6 +1,11 @@
 from django.urls import path
 
-from .views import KBQueryView, LoginView, RegisterView
+from .views import (
+    KBQueryView,
+    LoginView,
+    RegisterView,
+    UsageSummaryView,
+)
 
 
 urlpatterns = [
@@ -18,5 +23,10 @@ urlpatterns = [
         "kb/query/",
         KBQueryView.as_view(),
         name="kb-query",
+    ),
+    path(
+        "admin/usage-summary/",
+        UsageSummaryView.as_view(),
+        name="usage-summary",
     ),
 ]
