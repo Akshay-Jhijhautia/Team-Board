@@ -19,7 +19,7 @@ services:
       test:
         [
           "CMD-SHELL",
-          "pg_is_ready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"
+          "pg_is_ready -U $$POSTGRES_USER -d $$POSTGRES_DB"
         ]
       interval: 5s
       timeout: 5s
